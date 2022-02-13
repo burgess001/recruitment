@@ -1,0 +1,9 @@
+2022-02-12 15:13:44,067 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2022-02-12 15:14:10,669 django.utils.autoreload 240 INFO     /Users/jiawen.kou/workspace/django/recruitment/settings/base.py changed, reloading.
+2022-02-12 15:14:10,670 asyncio      58 DEBUG    Using selector: KqueueSelector
+2022-02-12 15:14:11,046 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2022-02-12 15:14:36,665 django.utils.autoreload 240 INFO     /Users/jiawen.kou/workspace/django/recruitment/settings/base.py changed, reloading.
+2022-02-12 15:14:36,665 asyncio      58 DEBUG    Using selector: KqueueSelector
+2022-02-12 15:14:37,046 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2022-02-12 15:15:04,667 django.utils.autoreload 240 INFO     /Users/jiawen.kou/workspace/django/recruitment/settings/base.py changed, reloading.
+2022-02-12 15:15:04,668 asyncio      58 DEBUG    Using selector: KqueueSelector

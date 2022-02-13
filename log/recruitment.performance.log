@@ -1,0 +1,21 @@
+2022-02-13 14:07:11,819 asyncio      58 DEBUG    Using selector: KqueueSelector
+2022-02-13 14:07:25,982 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2022-02-13 14:19:16,180 django.utils.autoreload 240 INFO     /Users/jiawen.kou/workspace/django/recruitment/settings/base.py changed, reloading.
+2022-02-13 14:19:16,200 asyncio      58 DEBUG    Using selector: KqueueSelector
+2022-02-13 14:19:16,716 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2022-02-13 14:19:21,980 asyncio      58 DEBUG    Using selector: KqueueSelector
+2022-02-13 14:19:56,289 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2022-02-13 14:21:29,288 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2022-02-13 14:22:09,036 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2022-02-13 14:24:39,507 django.utils.autoreload 240 INFO     /Users/jiawen.kou/workspace/django/recruitment/settings/base.py changed, reloading.
+2022-02-13 14:24:40,136 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2022-02-13 14:34:32,748 django.utils.autoreload 240 INFO     /Users/jiawen.kou/workspace/django/recruitment/settings/base.py changed, reloading.
+2022-02-13 14:34:32,761 asyncio      58 DEBUG    Using selector: KqueueSelector
+2022-02-13 14:34:33,488 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2022-02-13 14:36:00,787 django.utils.autoreload 240 INFO     /Users/jiawen.kou/workspace/django/recruitment/settings/base.py changed, reloading.
+2022-02-13 14:36:00,787 asyncio      58 DEBUG    Using selector: KqueueSelector
+2022-02-13 14:36:01,284 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2022-02-13 14:36:08,546 django.utils.autoreload 240 INFO     /Users/jiawen.kou/workspace/django/recruitment/settings/local.py changed, reloading.
+2022-02-13 14:36:08,547 asyncio      58 DEBUG    Using selector: KqueueSelector
+2022-02-13 14:36:08,916 django.utils.autoreload 617 INFO     Watching for file changes with StatReloader
+2022-02-13 14:37:19,642 asyncio      58 DEBUG    Using selector: KqueueSelector
