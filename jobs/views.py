@@ -14,7 +14,8 @@ def job_list(request):
     for job in job_list:
         job.city_name = JobCities[job.job_city][1]
         job.job_type = JobTypes[job.job_type][1]
-    return HttpResponse(template.render(context))
+    # return HttpResponse(template.render(context))
+    return render(request,'joblist.html',context)
 
 def detail(request,job_id):
     try:

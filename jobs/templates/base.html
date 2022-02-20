@@ -1,11 +1,10 @@
 <!--jobs/templates/base.html-->
 
-<h1 > 匠果科技开放职位 </h1>
-
+<h1 style="margin:auto; width:58%;"> 匠果科技开放职位 </h1>
+<p> </p>
+<!-- <hr> -->
 {% block header %}
-<div style="margin-left: 5px;display: -webkit-flex;display: flex;">
-    
-  <div style="flex: 4; ">
+<a href="/" style="text-decoration: none; color:#007bff">首页</a>
 <a href="/joblist" style="text-decoration: none; color:#007bff">职位列表</a>
 
 {% if user.is_authenticated %}
@@ -15,11 +14,13 @@
 {% endif %}
 
 {% if user.is_authenticated %}
-<p>终于等到你 {{ user_name }}, 期待加入我们，用技术去探索一个新世界 </p>
+<p>终于等到你 {{ user.username }}, 期待加入我们，用技术去探索一个新世界 </p>
 {% else %}
 <br> "欢迎你，期待加入我们，登陆后可以提交简历." <br>
 {% endif %}
-</div>
+{% endblock %}
+
+<hr>
 
 {% block content %}
 {% endblock %}
