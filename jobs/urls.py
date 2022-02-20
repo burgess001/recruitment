@@ -1,7 +1,8 @@
 from django.conf.urls import url
 from jobs import views
+from django.urls import path
 
 urlpatterns = [
-    url(r"joblist/", views.job_list,name="joblist"),
+    path("", views.job_list,name="joblist"),
     url(r"^job/(?P<job_id>\d+)/$",views.detail,name="detail")
 ]

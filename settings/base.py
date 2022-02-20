@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'grappelli',
+    'registration',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -56,6 +57,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'recruitment.urls'
 
+LOGIN_REDIRECT_URL='/'
+SIMPLE_BACKEND_REDIRECT_URL='/accounts/login/'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

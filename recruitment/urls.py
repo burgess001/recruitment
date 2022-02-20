@@ -21,10 +21,10 @@ from django.utils.translation import gettext as _
 from django.urls import path
 
 urlpatterns = [
+    path("", include("jobs.urls")),
     path('grappelli/',include('grappelli.urls')),
     url(r'^admin/', admin.site.urls),
-    url(r"^",include("jobs.urls")),
-
+    path('accounts/', include('registration.backends.simple.urls'))
 ]
 
 admin.site.site_header = _('无用科技招聘系统')

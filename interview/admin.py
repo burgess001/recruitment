@@ -1,4 +1,5 @@
 from django.contrib import admin
+import interview
 from interview.models import Candidate
 # Register your models here.
 from django.http import HttpResponse
@@ -7,6 +8,7 @@ import csv
 from datetime import datetime
 import logging
 from interview import candidate_field as cf
+from interview import dingtalk
 
 logger = logging.getLogger(__name__)
 
@@ -35,16 +37,27 @@ def export_model_as_csv(modeladmin,request,queryset):
     logger.error(" %s has exported %s candidate records" % (request.user.username, len(queryset)))
 
     return response
+def notify_interviewer(modeladmin,request,queryset):
+    candidates = ""
+    interviewers= ""
+    for obj in queryset:
+        candidates = obj.username + ";" + candidates
+        interviewers = obj.first_interviewer_user.username + ";" + interviewers
+    dingtalk.send("候选人 ts %s 进入环节，亲爱的你，请准备: %s" %(candidates,interviewers))
+
 
 export_model_as_csv.short_description = u'导出为csv文件'
 export_model_as_csv.allowed_permissions = ('export',)
+
+notify_interviewer.short_description = u'通知'
+
 # 候选人管理类
 class CandidateAdmin(admin.ModelAdmin):
 
     #create 和 modify 时不显示这些字段
     exclude = ('creator', 'created_date', 'modified_date')
 
-    actions = [export_model_as_csv,]
+    actions = [export_model_as_csv,notify_interviewer]
 
     # 当前用户是否有导出权限：
     def has_export_permission(self, request):
